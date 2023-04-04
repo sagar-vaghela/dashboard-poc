@@ -1,0 +1,88 @@
+#registration_form, #login_form
+{
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#registration_form input, #login_form input
+{
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #2d2d2d;
+    color: #bbb;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+    /* padding: 10px 60px 10px 20px; */
+    transition: all 0.2s ease-in-out;
+}
+#registration_form a, #login_form a
+{
+    width: 50%;
+    border-radius: 15px;
+}
+#registration_form .register_btn, #login_form .login_btn
+{
+    color: #fff;
+    border-radius: 15px;
+    background-color: #349eff;
+    border: 2px solid #349eff;
+    height: 50px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+}
+.btn-grp
+{
+    display: flex;
+    gap: 20px;
+}
+#registration_form .register_btn:hover, #login_form .login_btn:hover
+{
+    color: #349eff;
+    background-color: #2d2d2d;
+}
+#registration_form p a
+{
+    color: #349eff;
+    padding-bottom: 2px;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+#registration_form p a:hover
+{
+    border-bottom: 1px solid #349eff;
+}
+
+
+.topnav__search {
+    position: relative;
+    background-color: var(--main-bg);
+    display: flex;
+
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.topnav__search > input {
+    height: 100%;
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    color: var(--txt-color);
+    background-color: var(--main-bg);
+}
+.MuiBox-root:first-child
+{
+    margin: 0;
+    padding-top: 100px;
+}

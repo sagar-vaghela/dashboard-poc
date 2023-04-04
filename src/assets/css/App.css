@@ -1,0 +1,76 @@
+body
+{
+  text-align: center;
+}
+header
+{
+  border-bottom: 5px double black;
+  padding: 0 20px;
+}
+header h1
+{
+  margin: 0 !important;
+  padding: 15px 0;
+}
+.header_cont
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_actions
+{
+  display: flex;
+  gap: 15px;
+}
+.MuiTableCell-root
+{
+  padding: 14px !important;
+}
+.MuiTableCell-root a
+{
+  text-decoration: none;
+}
+
+.MuiToolbar-root p
+{
+  margin: 0;
+}
+
+/* register_form */
+a
+{
+  text-decoration: none;
+}
+.already
+{
+  color: #1976d2;
+}
+.table_cell
+{
+  border-color: #111 !important;
+}
+.MuiPaper-root
+{
+  box-shadow: var(--box-shadow) !important;
+}
+.MuiMenu-paper
+{
+  box-shadow: none !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #454545;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}

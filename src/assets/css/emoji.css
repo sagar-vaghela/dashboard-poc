@@ -1,0 +1,52 @@
+#emoji_layout
+{
+    /* display: flex;
+    width: 25%;
+    gap: 20px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+.emoji_box
+{
+    padding: 5px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    color: var(--txt-color);
+    background-color: var(--main-bg);
+    position: relative;
+    overflow: hidden;
+}
+.copy_btn
+{
+    content: 'Copy';
+    position: absolute;
+    top: -45px;
+    right: 0;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: var(--main-bg);
+    outline: 1.5px solid var(--txt-color);
+    transition: all 0.2s ease-in-out;
+}
+.copy_btn:hover
+{
+    box-shadow: 0 0 2px 2px var(--txt-color);
+}
+
+.emoji_box:hover .copy_btn
+{
+    top: 0px;
+}
+.emoji_box .emoji_symbol
+{
+    font-size: 2rem;
+}
