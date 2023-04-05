@@ -16,9 +16,9 @@ import '../assets/css/App.css';
 
 const Posts = () => {
 	let theme;
-	const curremtTheme = useSelector((state) => state.ThemeReducer.mode);
+	const currentTheme = useSelector((state) => state.ThemeReducer.mode);
 
-	if (curremtTheme === 'theme-mode-dark') {
+	if (currentTheme === 'theme-mode-dark') {
 		theme = createTheme({
 			palette: {
 				mode: 'dark',

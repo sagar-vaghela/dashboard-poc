@@ -10,7 +10,7 @@
 .emoji_box
 {
     padding: 5px;
-    height: 120px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -34,12 +34,12 @@
     border-radius: 7px;
     cursor: pointer;
     background-color: var(--main-bg);
-    outline: 1.5px solid var(--txt-color);
+    border: 1.5px solid var(--txt-color);
     transition: all 0.2s ease-in-out;
 }
 .copy_btn:hover
 {
-    box-shadow: 0 0 2px 2px var(--txt-color);
+    box-shadow: 0 0 3px 1px var(--txt-color);
 }
 
 .emoji_box:hover .copy_btn
@@ -48,5 +48,5 @@
 }
 .emoji_box .emoji_symbol
 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }

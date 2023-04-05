@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import emoji from '../assets/JsonData/data.json';
 import '../assets/css/emoji.css';
+import { useSelector } from 'react-redux';
 
 const Emoji = () => {
-  const tags = emoji.filter(e => e.keywords.includes(''));
-  // console.log(tags);
+  let search = ''; 
+  console.log(search);
+  search = useSelector(state => state.SearchData.search);
+  const tags = emoji.filter(e => e.keywords.includes(search) || e.title.includes(search) || e.symbol.includes(search));
+  if(search === '')
+  {
+    tags.slice(0, 20)
+  }
+  // console.log(tags.slice(0, 20));
 
   return (
     <>
@@ -19,9 +27,9 @@ const Emoji = () => {
                     {e.symbol}
                   </div>
                   <div className="emoji_title">
-                    {e.title}
+                    <h4>{e.title}</h4>
                   </div>
-                  <button className="copy_btn">Copy</button>
+                  <button className="copy_btn" onClick={() => { navigator.clipboard.writeText(e.symbol) }}>Copy</button>
                 </div>
               </>
             )

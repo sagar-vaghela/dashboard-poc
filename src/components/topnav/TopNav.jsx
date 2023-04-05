@@ -11,6 +11,8 @@ import ThemeMenu from '../thememenu/ThemeMenu';
 import user_image from '../../assets/images/user.png';
 
 import user_menu from '../../assets/JsonData/user_menus.json';
+import { useDispatch } from 'react-redux';
+import { fetchSearchValue } from '../../redux/actions';
 
 const curr_user = {
 	display_name: 'John Doe',
@@ -37,9 +39,13 @@ const renderUserMenu = (item, index) => (
 
 const Topnav = () => {
 
+	const dispatch = useDispatch();
+
 	const search_val = (e) => {
 		const search = e.target.value;
-		console.log('search:', search);
+		dispatch(fetchSearchValue(search));
+
+		// console.log('search:', search);
 	}
 
 	return (

@@ -5,6 +5,8 @@
     --second-bg: #fafafb;
     --txt-color: #455560;
     --txt-white: #fff;
+    --scroll-bg: #ccc;
+    --scroll-handle: #bbb;
     --main-color: #349eff;
     --main-opacity-color: #349eff;
     --second-color: #62b4ff;
@@ -13,11 +15,15 @@
     --main-bg-light: #ffffff;
     --second-bg-light: #fafafb;
     --txt-color-light: #455560;
+    --scroll-bg-light: #ddd;
+    --scroll-handle-light: #bbb;
     --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
     --main-bg-dark: #2d2d2d;
     --second-bg-dark: #202020;
     --txt-color-dark: #bbbbbb;
+    --scroll-bg-dark: #333;
+    --scroll-handle-dark: #555;
     --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
     
     --main-color-blue: #349eff;

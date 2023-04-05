@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import './sidebar.css';
 
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/favicon.png';
 
 // import sidebar_items from '../../assets/JsonData/sidebar_routes.json';
 import { NavLink } from 'react-router-dom';
@@ -38,6 +38,7 @@ const Sidebar = (props) => {
 		<div className='sidebar'>
 			<div className='sidebar__logo'>
 				<img src={logo} alt='company logo' />
+				<h1 style={{ paddingLeft: '10px' }}>Admin</h1>
 			</div>
 			{localStorage.getItem('isLoggedIn') ? (
 				<>

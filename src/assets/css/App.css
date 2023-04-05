@@ -60,7 +60,7 @@ a
 }
 
 ::-webkit-scrollbar-track {
-  background: #272727;
+  background: var(--scroll-bg);
 }
 
 ::-webkit-scrollbar {
@@ -68,7 +68,7 @@ a
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #454545;
+  background: var(--scroll-handle);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {

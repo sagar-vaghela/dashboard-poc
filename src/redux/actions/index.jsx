@@ -13,6 +13,7 @@ import {
 	FETCH_COMMENTS_SUCCESS,
 	FETCH_COMMENTS_REQUEST,
 } from './commentTypes';
+import { FETCH_SEARCH_VALUE } from './searchTypes';
 import axios from 'axios';
 
 // --- user ---
@@ -118,3 +119,15 @@ export const fetchComments = (id) => {
 			});
 	};
 };
+
+// --- search ---
+export const fetchSearchValue = (value) => {
+	return {
+		type: FETCH_SEARCH_VALUE,
+		payload: value,
+	};
+};
+
+
+
+

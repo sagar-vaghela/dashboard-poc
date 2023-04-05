@@ -3,6 +3,8 @@
     --second-bg: var(--second-bg-light);
     --txt-color: var(--txt-color-light);
     --box-shadow: var(--box-shadow-light);
+    --scroll-bg: var(--scroll-bg-light);
+    --scroll-handle: var(--scroll-handle-light);
 }
 
 .theme-mode-dark {
@@ -10,6 +12,8 @@
     --second-bg: var(--second-bg-dark);
     --txt-color: var(--txt-color-dark);
     --box-shadow: var(--box-shadow-dark);
+    --scroll-bg: var(--scroll-bg-dark);
+    --scroll-handle: var(--scroll-handle-dark);
 }
 
 .theme-color-blue {
